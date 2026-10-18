@@ -25,11 +25,11 @@ svg{flex-shrink:0}
 .waitlist-layout{display:grid;grid-template-columns:1fr 1.03fr;min-height:620px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .signup-panel{padding:54px 48px 26px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
 
-h1{font-size:clamp(46px,4.6vw,74px);font-weight:400;letter-spacing:-2px;line-height:1.07}.signup-panel h1,.brand,.photo-wordmark{font-family:'Fredoka Variable',Arial,sans-serif;font-weight:700}
+h1{font-size:clamp(46px,4.6vw,74px);font-weight:400;letter-spacing:-2px;line-height:1.07}.signup-panel h1,.brand,.photo-wordmark{font-family:'Bricolage Grotesque Variable',Arial,sans-serif;font-weight:800}
 .hero-description{font-size:15px;line-height:1.85;max-width:370px;margin:25px 0 38px;color:var(--muted)}
 .photo-panel{position:relative;min-height:620px;overflow:hidden;background:#b9bbaf}
 .photo-panel img{object-fit:cover;object-position:center 24%}
-.photo-wordmark{position:absolute;bottom:17px;left:28px;font-size:clamp(110px,16vw,265px);letter-spacing:-.065em;font-weight:700;line-height:.9;color:#fffdf0;pointer-events:none}
+.photo-wordmark{position:absolute;bottom:17px;left:28px;font-size:clamp(110px,16vw,265px);letter-spacing:-.065em;font-weight:800;line-height:.9;color:#fffdf0;pointer-events:none}
 .waitlist-form{width:100%;max-width:440px;scroll-margin-top:35px}
 .field-label{display:block;font-size:12px;font-weight:650;margin-bottom:12px}
 .email-input-row{display:flex;gap:7px}

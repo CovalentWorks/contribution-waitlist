@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.3.0",
-    "@fontsource-variable/fredoka": "^5.3.0",
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
     "@netlify/blobs": "11.1.4",
     "@phosphor-icons/react": "2.1.10",
     "next": "16.4.2",
@@ -23,6 +23,7 @@
     "zod": "^4.0.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.16.2",
     "@playwright/test": "^1.55.0",
     "@types/node": "^22",
     "@types/nodemailer": "^7",
