@@ -1,0 +1,112 @@
+.experiment { --ink:#111d2c; --muted:#344a61; --line:#7d9db8; --surface:#f7fbff; --accent:#142940; --sage:#e8f2ff; min-height:100dvh; color:var(--ink); background:#cce7ff; overflow:clip; }
+.header { display:flex; align-items:center; gap:36px; justify-content:space-between; max-width:1480px; margin:auto; padding:24px 48px; height:100px; position:relative; z-index:3; }
+.header :global(.brand) { font-size:54px; letter-spacing:-3px; margin-right:auto; }
+.header>a:not(:first-child) { display:flex; align-items:center; gap:8px; font-size:13px; min-height:44px; }
+.header .contact { border:1px solid currentColor; border-radius:999px; padding:0 20px; }
+.stage { position:relative; max-width:1480px; margin:auto; padding:36px 48px 64px; min-height:830px; }
+.titleBlock { position:relative; z-index:2; max-width:670px; pointer-events:none; }
+.titleBlock h1 { font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:clamp(72px,7.2vw,108px); line-height:.93; font-weight:800; letter-spacing:-.065em; }
+.titleBlock h1 span { color:#0b6be4; }
+.titleBlock>p { max-width:430px; font-size:16px; line-height:1.6; margin-top:24px; color:var(--muted); }
+.artwork { position:absolute; top:-80px; right:-92px; width:min(68vw,960px); height:960px; z-index:1; }
+.sculpture { position:absolute; inset:0; }
+.sculpture canvas { display:block; position:absolute; inset:0; width:100%; height:100%; }
+.fallbackShape { position:absolute; width:65%; aspect-ratio:1; border:60px solid #086df1; border-right-color:#ff8b38; border-bottom-color:#a8d7ff; border-radius:50%; left:50%; top:50%; transform:translate(-50%,-50%) rotate(-20deg); }
+.ready .fallbackShape { display:none; }
+.portrait { position:absolute; left:50%; top:50%; width:52%; height:54%; border-radius:50%; overflow:hidden; transform:translate(-50%,-50%) rotate(-8deg); }
+.portrait img { object-fit:cover; object-position:48% center; }
+.signup { position:relative; z-index:2; width:460px; color:var(--ink); margin-top:28px; background:#f8fbff; border:1px solid #a5c3df; padding:24px; border-radius:22px; box-shadow:0 8px 0 #a5c9ec; }
+.signup :global(.waitlist-form), .signup :global(.signup-success) { max-width:none; }
+.signup :global(.field-label) { font-size:14px; }
+.signup :global(.email-field) { background:white; border:1px solid #93a3b5; border-radius:10px; }
+.signup :global(.email-field input) { min-height:50px; }
+.signup :global(.button) { border-radius:999px; min-height:52px; font-weight:750; background:#e4f970; color:#152336; border-color:#182b42; box-shadow:0 3px 0 #182b42; }
+.signup :global(.button:hover) { background:#d2ed42; }
+.signup :global(.optional-fields summary) { font-size:12px; }
+.signup :global(.consent) { font-size:11px; line-height:1.6; min-height:40px; }
+.signup :global(.signup-success) { background:transparent; border:0; padding:0; }
+.signup :global(.signup-success h2) { font-size:30px; }
+.explainer { display:grid; grid-template-columns:1fr 1fr; gap:72px; padding:64px 48px; max-width:1480px; margin:auto; border-top:1px solid #9fbdd6; }
+.explainer h2 { font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:clamp(32px,4vw,60px); font-weight:800; line-height:1.03; letter-spacing:-.05em; }
+.explainer p { font-size:16px; line-height:1.7; max-width:530px; }
+.explainer details { margin-top:20px; border-top:1px solid var(--line); }
+.explainer summary { display:flex; align-items:center; justify-content:space-between; cursor:pointer; min-height:56px; font-size:14px; }
+.explainer details p { padding-bottom:12px; font-size:14px; }
+.footer { max-width:1480px; padding:16px 48px 32px; margin:auto; display:flex; align-items:center; justify-content:space-between; font-size:12px; color:var(--muted); }
+.footer a { display:flex; align-items:center; min-height:44px; gap:8px; }
+.assembly { --ink:#f0eaff; --muted:#cec6dd; --surface:#282332; --line:#635671; --accent:#c3a5ff; --sage:#32283b; background:#18151d; }
+.assembly .header .contact { background:#dcff89; border-color:#dcff89; color:#191720; }
+.assembly .titleBlock { max-width:720px; }
+.assembly .titleBlock h1 { font-size:clamp(64px,6.1vw,92px); max-width:720px; }
+.assembly .titleBlock h1 span { color:#c4a5ff; }
+.assembly .artwork { top:16px; right:-48px; width:min(62vw,900px); height:720px; }
+.photoTile { position:absolute; width:46%; height:38%; top:35%; left:27%; transform:rotate(-12deg); overflow:hidden; border:8px solid #bea1ff; border-radius:24px; }
+.photoTile img { object-fit:cover; }
+.artwork:has(.ready) .photoTile { display:none; }
+.assembly .fallbackShape { border-color:#ac91ee; border-radius:60px; transform:translate(-50%,-50%) rotate(-20deg); }
+.assembly .signup { --ink:#231d2a; --muted:#554b61; --surface:#fffbff; --line:#a69bac; --accent:#60438d; background:#eee6ff; border-color:#eee6ff; box-shadow:none; border-radius:16px; }
+.assembly .signup :global(.email-field) { border-color:#8b7d9a; }
+.assembly .signup :global(.button) { background:#d9fb8c; border-color:#28202d; box-shadow:none; border-radius:10px; }
+.assembly .signup :global(.button:hover) { background:#c3ed6c; }
+.assembly .explainer { border-color:#4c405a; }
+
+.gallery { min-height:100dvh; background:#f0f1f5; color:#181a22; padding:48px max(24px,6vw); }
+.gallery header { display:flex; align-items:center; justify-content:space-between; }
+.gallery header>a { text-decoration:underline; }
+.gallery h1 { font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-weight:800; font-size:clamp(44px,6vw,80px); margin:64px 0 20px; letter-spacing:-.05em; }
+.gallery>p { max-width:680px; line-height:1.8; color:#5d606b; }
+.choices { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin:40px 0; }
+.choice { display:flex; flex-direction:column; min-height:340px; border-radius:24px; padding:32px; background:#cce7ff; }
+.choice:nth-child(2) { background:#18151d; color:#eee6ff; }
+.choice h2 { margin:32px 0 16px; font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:52px; font-weight:800; }
+.choice p { line-height:1.6; max-width:400px; }
+.choice>span:last-child { display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:36px; font-weight:700; }
+.gallery small { line-height:1.8; }
+
+@media (min-width:901px) and (max-width:1100px) {
+  .header { padding:20px 32px; }
+  .stage { padding:24px 32px 48px; }
+  .titleBlock { max-width:560px; }
+  .titleBlock h1,.assembly .titleBlock h1 { font-size:76px; }
+  .artwork { width:680px; right:-170px; top:40px; height:680px; }
+  .assembly .artwork { width:650px; right:-170px; top:100px; height:620px; }
+  .signup { width:420px; }
+  .explainer { padding:48px 32px; gap:32px; }
+}
+@media (max-width:900px) {
+  .header { padding:16px 20px; height:76px; gap:16px; }
+  .header :global(.brand) { font-size:42px; }
+  .header>a:not(:first-child) { font-size:12px; }
+  .header>a.contact { display:none; }
+  .stage { display:flex; flex-direction:column; min-height:0; padding:24px 20px 48px; }
+  .titleBlock { max-width:none; }
+  .titleBlock h1 { font-size:clamp(44px,14.3vw,90px); line-height:.94; letter-spacing:-.065em; }
+  .titleBlock>p { font-size:15px; line-height:1.6; max-width:420px; margin-top:20px; }
+  .artwork { position:relative; top:auto; right:auto; width:calc(100% + 40px); height:220px; margin:24px -20px 0; order:1; }
+  .portrait { width:164px; height:164px; }
+  .sculpture { inset:-40px 0; }
+  .signup { order:2; width:100%; margin-top:0; padding:20px; border-radius:18px; }
+  .signup :global(.field-label) { font-size:13px; }
+  .signup :global(.consent) { font-size:12px; }
+  .signup :global(.optional-fields summary) { font-size:12px; gap:3px; flex-wrap:wrap; }
+  .signup :global(.optional-fields summary span) { font-size:11px; }
+  .signup :global(.button) { font-size:15px; }
+  .explainer { grid-template-columns:1fr; gap:24px; padding:40px 24px; }
+  .explainer h2 { font-size:40px; }
+  .explainer p { font-size:15px; }
+  .footer { padding:0 24px 24px; }
+  .assembly .titleBlock h1 { font-size:clamp(42px,13.6vw,86px); line-height:.94; }
+  .assembly .artwork { top:auto; right:auto; width:calc(100% + 40px); height:240px; margin:8px -20px 0; }
+  .assembly .sculpture { inset:-24px 0; }
+  .photoTile { width:50%; height:56%; top:24%; left:25%; }
+  .gallery { padding-top:24px; }
+  .gallery h1 { margin-top:40px; }
+  .choices { grid-template-columns:1fr; }
+}
+@media (min-width:600px) and (max-width:900px) {
+  .artwork { height:320px; }
+  .portrait { width:220px; height:220px; }
+  .signup { max-width:540px; margin-inline:auto; }
+  .assembly .artwork { height:320px; }
+}
+@media (prefers-reduced-motion:reduce) { .experiment * { scroll-behavior:auto; } }
