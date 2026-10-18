@@ -1,0 +1,37 @@
+{
+  "name": "contribution-waitlist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3035",
+    "build": "next build",
+    "start": "next start --port 3035",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:integration": "tsx tests/api.integration.ts"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "@netlify/blobs": "11.1.4",
+    "@phosphor-icons/react": "2.1.10",
+    "nodemailer": "10.1.2",
+    "sql.js": "1.15.0",
+    "zod": "^4.0.0",
+    "@fontsource-variable/manrope": "^5.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/nodemailer": "^7",
+    "@types/sql.js": "^1.4.9",
+    "tsx": "^4.20.0",
+    "@playwright/test": "^1.55.0"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

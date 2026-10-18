@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.netlify/
+.env*
+!.env.example
+.data/
+*.sqlite
+*.sqlite-*
+*.db
+coverage/
+test-results/
+playwright-report/
+.DS_Store
+*.tsbuildinfo
