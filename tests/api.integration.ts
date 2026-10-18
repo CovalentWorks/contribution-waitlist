@@ -18,7 +18,7 @@ async function main() {
  const server = spawn(process.execPath,['node_modules/next/dist/bin/next','start','--port','3036'],{env:process.env,stdio:'pipe'});
  let logs = ''; server.stderr.on('data',chunk=>logs+=chunk.toString());
  const post = (url:string,body:unknown,cookie='',origin=base) => fetch(base+url,{method:'POST',headers:{'Content-Type':'application/json',Origin:origin,Cookie:cookie},body:JSON.stringify(body)});
- const signup = {email:'person@example.com',consent:true,interest:'Family',purpose:'=SUM(1,1)',company:''};
+ const signup = {email:'person@example.com',consent:true,interest:'Family project back home',purpose:'=SUM(1,1)',company:''};
  try {
    let ready = false;
    for(let n=0;n<100;n++){try{if((await fetch(base)).ok){ready=true;break;}}catch{} await new Promise(r=>setTimeout(r,100));}

@@ -9,4 +9,16 @@ export const brand = {
   colors: { forest: '#183f32', paper: '#fafbf6', yellow: '#f3e5a2' },
 } as const;
 
-export const interests = ['Family', 'Estate or community', 'Charity or cause', 'Something else'] as const;
+export const interests = [
+  'Alumni / school set',
+  'Estate or residents association',
+  'Church or mosque committee',
+  'Office welfare or staff contribution',
+  'Family meeting',
+  'Family project back home',
+  'Wedding / aso-ebi',
+  'Burial or funeral contribution',
+  'Market or trade association',
+  'Charity or NGO',
+  'Something else',
+] as const;
