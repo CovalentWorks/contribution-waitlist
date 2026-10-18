@@ -3,7 +3,7 @@
 These concepts are isolated on branch `design/modern-experiments` in the `padi-design-lab` worktree. They are not deployed and do not replace the existing local app on port 3035. Run `npx next dev --port 3038` here, then open:
 
 - http://localhost:3038/ — comparison index
-- http://localhost:3038/lab/circle — sky-blue shared ring
+- http://localhost:3038/lab/circle — pale-ivory background with a blue shared ring
 - http://localhost:3038/lab/assembly — dark/lilac assembled blocks
 
 The local environment has its own database and secrets, with no SMTP credentials. Preview submissions must not be mistaken for live signups. Keep this environment isolated; do not copy the production environment into the lab.
@@ -25,10 +25,15 @@ Reference artwork and logos were not reused. Both sculptures are original Three.
 
 ## Photographs and rights
 
-- Circle: [Friends Smiling at Phone in Lagos, Nigeria](https://www.pexels.com/photo/friends-smiling-at-phone-in-lagos-nigeria-30677716/) by **Ninthgrid**. Source location: Lagos, Lagos, Nigeria. Optimized local file: `public/images/lagos-friends.webp`.
+- Circle, current revision: [Group of Smiling Friends in Abuja, Nigeria](https://www.pexels.com/photo/group-of-smiling-friends-in-abuja-nigeria-32617902/) by **Muhammad-Taha Ibrahim**. Source location: Abuja, Federal Capital Territory, Nigeria. Optimized local file: `public/images/abuja-friends.webp`. Found after the user's requested Pexels search, “group of friends african black,” followed by Nigerian group-photo searches. The source describes five friends; the image was visually inspected before selection. CSS positions the portrait crop toward the group rather than the empty sky.
+- Circle, previous revision: [Friends Smiling at Phone in Lagos, Nigeria](https://www.pexels.com/photo/friends-smiling-at-phone-in-lagos-nigeria-30677716/) by **Ninthgrid**. Source location: Lagos, Lagos, Nigeria. Original local file retained: `public/images/lagos-friends.webp`.
 - Assembly: [Joyful Wedding Celebration in Nigeria](https://www.pexels.com/photo/joyful-wedding-celebration-in-nigeria-30049861/) by **Deji Prince**. Source location: Federal Capital Territory, Nigeria. Optimized local file: `public/images/nigerian-wedding.webp`.
 
-Both were downloaded under the [Pexels licence](https://www.pexels.com/license/), which permits free commercial use and modification. The subjects are not represented as actual customers or endorsers. Nigerian context comes from source metadata, not assumptions based on appearance. Images are real photographs; no synthetic people were generated.
+The photographs were downloaded under the [Pexels licence](https://www.pexels.com/license/), which permits free commercial use and modification. The subjects are not represented as actual customers or endorsers. Nigerian context comes from source metadata, not assumptions based on appearance. Images are real photographs; no synthetic people were generated.
+
+## Lighter Circle revision
+
+After choosing Circle, the user requested a lighter background like the warm local version. Circle now uses pale ivory `#fbf8f1`, warm-white form surfaces, soft neutral borders/shadows, and a muted butter-yellow button. The blue sculpture, navy/blue heading, layout, copy, and type remain. These overrides are scoped to Circle; Assembly and the original app on port 3035 are unchanged. This revision is still local, with no deployment.
 
 ## Review outcome
 
