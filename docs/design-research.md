@@ -15,3 +15,9 @@ The copy explains the actual proposed controls: collection links, visible contri
 [Cheerful Black friends hugging on a sandy beach](https://www.pexels.com/photo/cheerful-black-friends-hugging-on-sandy-beach-5161734/) by **SALOMON BYUMA**, Pexels. Used under the [Pexels license](https://www.pexels.com/license/). Stored locally as `public/images/community.webp` and `community-email.jpg`, resized/compressed for web and email. These are stock-photo subjects, not claimed customers or team members. The user's brief specifically requested Black or African people.
 
 Bricolage Grotesque ExtraBold for display text and Archivo for body text are self-hosted through Fontsource. This follows the user’s request for big, bold, modern, curving typography; icons are from Phosphor. No third-party font requests or analytics are required by the page.
+
+## Mobile opening revision
+
+Reviewed Mobbin's archived Luffu hero and Pally waitlist again, plus the live phone layouts of [Luffu](https://luffu.com/), [Partiful](https://partiful.com/), and [Pally](https://pally.com/). The live Luffu and Pally pages have evolved beyond their archived waitlists. Luffu uses photography behind its opening message; Partiful places its social image beneath a short headline and actions while still showing it in the first phone viewport. Pally uses a focused text-led opening.
+
+For Padi, the previous phone layout placed a long paragraph and the complete form before the photo, making the strongest visual feel detached. The revised phone hero combines the photo and headline in one opening composition. Faces stay in the upper portion and a dark lower scrim keeps the headline legible; the description and form follow immediately. Desktop retains the side-by-side composition. The image and headline are not duplicated in the DOM.

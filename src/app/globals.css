@@ -97,15 +97,15 @@ h2{font-weight:600;font-size:32px;letter-spacing:-1px;line-height:1.2}
 }
 @media (max-width:760px) {
   .landing{padding:0 24px;max-width:620px}
-  .site-header{height:88px;padding:0;gap:24px}
+  .site-header{height:76px;padding:0;gap:24px}
   .site-header .brand{font-size:40px}
   .site-header>a:not(.brand){font-size:14px;min-height:44px}
-  .waitlist-layout{display:flex;flex-direction:column;min-height:0;border:0;border-radius:0;overflow:visible}
+  .waitlist-layout{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:clamp(360px,94vw,480px) auto auto auto;min-height:0;border:0;border-radius:0;overflow:visible}
   .signup-panel{display:contents}
-  .signup-intro{order:1;padding-top:20px}
-  .signup-panel h1{font-size:clamp(40px,12vw,68px);letter-spacing:-.045em;line-height:1.04}
-  .hero-description{font-size:16px;line-height:1.7;max-width:440px;margin:24px 0 28px}
-  .waitlist-form,.signup-success{order:2;max-width:none}
+  .signup-intro{display:contents}
+  .signup-panel h1{grid-area:1 / 1;align-self:end;z-index:1;position:relative;padding:0 16px 24px;color:#fffef9;font-size:clamp(39px,11.4vw,64px);letter-spacing:-.045em;line-height:1.04}
+  .hero-description{grid-area:2 / 1;font-size:16px;line-height:1.7;max-width:440px;margin:24px 0 28px}
+  .waitlist-form,.signup-success{grid-area:3 / 1;max-width:none}
   .field-label{font-size:14px;line-height:1.5;margin-bottom:12px}
   .email-input-row{flex-direction:column;gap:12px}
   .email-field{width:100%;min-height:56px;padding-left:16px}
@@ -117,10 +117,11 @@ h2{font-weight:600;font-size:32px;letter-spacing:-1px;line-height:1.2}
   .consent{font-size:12px;line-height:1.65;margin-top:8px}
   .optional-content{padding-top:12px}
   .optional-content select,.optional-content textarea{font-size:16px}
-  .photo-panel{order:3;min-height:0;height:auto;aspect-ratio:1 / 1.05;border-radius:16px;margin-top:32px}
-  .photo-panel img{object-position:center 28%}
-  .photo-wordmark{font-size:clamp(110px,37vw,200px);left:16px;bottom:16px}
-  .about-product{order:4;margin-top:24px;max-width:none}
+  .photo-panel{grid-area:1 / 1;min-height:0;height:100%;border-radius:16px;margin:0 -8px;isolation:isolate}
+  .photo-panel img{object-position:center 24%}
+  .photo-panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(9,29,22,.72) 65%,rgba(9,29,22,.94) 100%)}
+  .photo-wordmark{display:none}
+  .about-product{grid-area:4 / 1;margin-top:28px;max-width:none}
   .about-product summary{padding:20px 0;min-height:64px;font-size:14px}
   .about-product p{font-size:14px;line-height:1.8}
   .site-footer{padding:8px 0 max(24px,env(safe-area-inset-bottom));font-size:12px;gap:16px}
@@ -132,7 +133,7 @@ h2{font-weight:600;font-size:32px;letter-spacing:-1px;line-height:1.2}
 }
 @media (max-width:359px) {
   .landing{padding-inline:20px}
-  .signup-panel h1{font-size:39px}
+  .signup-panel h1{font-size:36px;padding-inline:12px}
   .optional-fields>summary{font-size:12px;gap:4px}
   .optional-fields>summary span{font-size:11px}
 }
