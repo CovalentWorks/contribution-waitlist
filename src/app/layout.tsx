@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import '@fontsource-variable/libre-franklin';
+import '@fontsource/archivo-black';
+import '@fontsource-variable/archivo';
 import './globals.css';
 import { brand } from '@/config';
 export const metadata: Metadata = {

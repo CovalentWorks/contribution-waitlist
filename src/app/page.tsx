@@ -11,8 +11,7 @@ export default function Home() {
     <main id="main" className="waitlist-layout">
       <section className="signup-panel" aria-labelledby="waitlist-title">
         <div className="signup-intro">
-          <p className="coming-soon">Currently in development</p>
-          <h1 id="waitlist-title">Know where your<br />group’s money goes.</h1>
+          <h1 id="waitlist-title">Know where<br />your group’s<br />money goes.</h1>
           <p className="hero-description">With {brand.name}, your group will collect contributions through one link. Everyone can see payments in and out, and withdrawals need approval from the people you choose.</p>
         </div>
         <WaitlistForm />
