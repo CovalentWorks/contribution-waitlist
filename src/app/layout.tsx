@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import '@fontsource/archivo-black';
+import '@fontsource-variable/fredoka';
 import '@fontsource-variable/archivo';
 import './globals.css';
 import { brand } from '@/config';
