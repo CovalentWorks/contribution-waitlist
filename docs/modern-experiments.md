@@ -2,6 +2,12 @@
 
 ## Current direction: simple photograph, no 3D
 
+### Subsecute reference and stable photo position
+
+The user subsequently requested the slight slant and decorations used on [Subsecute's live landing page](https://www.subsecute.com/). The live hero, family photo and gift-link composition were inspected visually and through their rendered styles. The hero uses a roughly -3° panel tilt; the gift composition has a warm rotated backing shape and small decorative objects at its edges. Padi adapts these with a -2° photograph (-1.5° on mobile), a flat peach backing shape at +2.5°, and two small Phosphor people/receipt marks. They are decorative, hidden from assistive technology, and do not block pointer events. No 3D, circular framing, financial balances, or simulated activity was introduced.
+
+The optional-fields jump was caused by the photo being vertically centred in a grid area spanning the heading and signup. Expanding the form increased that area's height and moved the centred photo. It now aligns to the top. A real-browser regression check clicked the optional-fields toggle open and closed at 320, 390, 768, 1024 and 1440px and verified unchanged document coordinates and dimensions for the photograph, with no horizontal overflow or page errors. Screenshots were inspected and the production build passed.
+
 The user selected a flat photographic design: keep the five friends in Abuja, remove the circular crop and all 3D objects, and use the rust-brown accent from the original local page instead of blue. The current `/lab/circle` URL is retained so existing preview links continue to work, but the concept is now labelled **Friends**. The photo uses a rectangular crop with small corner rounding and a thin offset rust outline. The headline accent and button use `#a93f27`; the pale-ivory background remains. There are no raised shadows or WebGL canvases.
 
 The shared 3D component, Three.js dependency, and its types were removed. The secondary dark comparison also uses a flat photo. The Abuja photo is retained: the user's clarification referred to the reddish-brown colour, not replacing it with the family photo from port 3035.

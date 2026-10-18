@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUpRight, ArrowRight, Plus } from '@phosphor-icons/react/dist/ssr';
+import { ArrowUpRight, ArrowRight, Plus, UsersThree, Receipt } from '@phosphor-icons/react/dist/ssr';
 import { Brand } from '@/components/brand';
 import { WaitlistForm } from '@/components/waitlist-form';
 import { brand } from '@/config';
@@ -19,6 +19,7 @@ export function Experiment({ variant }: { variant: 'circle' | 'assembly' }) {
         </div>
         <div className={styles.artwork}>
           <div className={styles.portrait}><Image src={circle ? '/images/abuja-friends.webp' : '/images/nigerian-wedding.webp'} alt={circle ? 'Five friends sitting together outdoors in Abuja, Nigeria' : 'Friends and family celebrating at a Nigerian wedding'} fill preload sizes="(max-width:600px) calc(100vw - 48px), (max-width:900px) 560px, 45vw" /></div>
+          {circle && <div className={styles.photoDecorations} aria-hidden="true"><span className={styles.peopleStamp}><UsersThree size={32} weight="duotone" /></span><span className={styles.recordStamp}><Receipt size={30} weight="duotone" /></span></div>}
         </div>
         <div className={styles.signup}><WaitlistForm /></div>
       </section>
