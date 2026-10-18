@@ -18,7 +18,10 @@ export function Experiment({ variant }: { variant: 'circle' | 'assembly' }) {
           <p>{brand.name} will give your group one link to collect money, a shared record of payments, and people you choose to approve withdrawals.</p>
         </div>
         <div className={styles.artwork}>
-          <div className={styles.portrait}><Image src={circle ? '/images/abuja-friends.webp' : '/images/nigerian-wedding.webp'} alt={circle ? 'Five friends sitting together outdoors in Abuja, Nigeria' : 'Friends and family celebrating at a Nigerian wedding'} fill preload sizes="(max-width:600px) calc(100vw - 48px), (max-width:900px) 560px, 45vw" /></div>
+          <div className={styles.portrait}>
+            <Image src={circle ? '/images/abuja-friends.webp' : '/images/nigerian-wedding.webp'} alt={circle ? 'Five friends sitting together outdoors in Abuja, Nigeria' : 'Friends and family celebrating at a Nigerian wedding'} fill preload sizes="(max-width:600px) calc(100vw - 48px), (max-width:900px) 560px, 45vw" />
+            {circle && <span className={styles.photoWordmark} aria-hidden="true">{brand.name.toLowerCase()}.</span>}
+          </div>
           {circle && <div className={styles.photoDecorations} aria-hidden="true"><span className={styles.peopleStamp}><UsersThree size={32} weight="duotone" /></span><span className={styles.recordStamp}><Receipt size={30} weight="duotone" /></span></div>}
         </div>
         <div className={styles.signup}><WaitlistForm /></div>

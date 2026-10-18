@@ -10,8 +10,9 @@
 .titleBlock>p { max-width:430px; font-size:16px; line-height:1.6; margin-top:24px; color:var(--muted); }
 .artwork { grid-area:photo; position:relative; width:100%; max-width:620px; align-self:start; margin:32px 12px 24px 0; }
 .artwork::before { content:''; position:absolute; inset:12px -12px -12px 12px; border:1px solid var(--accent); border-radius:16px; }
-.portrait { position:relative; width:100%; aspect-ratio:1; overflow:hidden; border-radius:16px; background:#e8dfd0; }
+.portrait { position:relative; width:100%; aspect-ratio:1; overflow:hidden; border-radius:16px; background:#e8dfd0; container-type:inline-size; }
 .portrait img { object-fit:cover; object-position:50% 82%; }
+.photoWordmark { position:absolute; left:6%; bottom:6%; color:#fffce9; font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:clamp(56px,27cqw,190px); font-weight:800; letter-spacing:-.07em; line-height:.82; pointer-events:none; user-select:none; }
 .signup { grid-area:signup; width:100%; max-width:460px; margin-top:28px; padding:0; }
 .signup :global(.waitlist-form), .signup :global(.signup-success) { max-width:none; }
 .signup :global(.field-label) { font-size:14px; }
