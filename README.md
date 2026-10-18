@@ -62,3 +62,7 @@ The integration suite starts an isolated production server on port 3036 with tem
 Design research and photography credits: [docs/design-research.md](docs/design-research.md) and [docs/modern-experiments.md](docs/modern-experiments.md). The approved homepage uses the Abuja friends photograph, a pale-ivory/rust palette, flat decorations, and a configurable wordmark. Earlier comparisons remain on the experiment branch and are not public production routes.
 
 Release validation and rollback: [docs/release-2026-10-18.md](docs/release-2026-10-18.md).
+
+## Current landing design
+
+The homepage uses the approved animated ledger and Manrope ExtraBold heading. The estate members, contributions and payments in the animation are fictional examples; no real financial data is connected. The animation loops automatically and renders a static final state for reduced-motion preferences. The design gallery and alternative routes are retired. See [the ledger release notes](docs/release-ledger-2026-10-18.md).

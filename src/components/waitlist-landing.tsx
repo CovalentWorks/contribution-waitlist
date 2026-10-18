@@ -1,6 +1,7 @@
-import Image from 'next/image';
+import '@fontsource-variable/manrope';
+import { AnimatedLedger } from './animated-ledger';
 import Link from 'next/link';
-import { ArrowRight, Plus, UsersThree, Receipt } from '@phosphor-icons/react/dist/ssr';
+import { ArrowRight, Plus } from '@phosphor-icons/react/dist/ssr';
 import { Brand } from '@/components/brand';
 import { WaitlistForm } from '@/components/waitlist-form';
 import { brand } from '@/config';
@@ -16,13 +17,7 @@ export function WaitlistLanding() {
           <h1 id="hero-title">Know where<br />your group’s<br /><span>money goes.</span></h1>
           <p>{brand.name} will give your group one link to collect money, a shared record of payments, and people you choose to approve withdrawals.</p>
         </div>
-        <div className={styles.artwork}>
-          <div className={styles.portrait}>
-            <Image src="/images/abuja-friends.webp" alt="Five friends sitting together outdoors in Abuja, Nigeria" fill preload sizes="(max-width:600px) calc(100vw - 48px), (max-width:900px) 560px, 45vw" />
-            <span className={styles.photoWordmark} aria-hidden="true">{brand.name.toLowerCase()}.</span>
-          </div>
-          <div className={styles.photoDecorations} aria-hidden="true"><span className={styles.peopleStamp}><UsersThree size={32} weight="duotone" /></span><span className={styles.recordStamp}><Receipt size={30} weight="duotone" /></span></div>
-        </div>
+        <div className={styles.ledgerArea}><AnimatedLedger /></div>
         <div className={styles.signup}><WaitlistForm /></div>
       </section>
       <section className={styles.explainer} aria-labelledby="explainer-title">

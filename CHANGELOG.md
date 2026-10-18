@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.2 — 2026-10-18
+
+### Changed
+
+- Replace the hero photograph with the selected animated estate-contribution ledger.
+- Use Manrope ExtraBold for the main headline.
+- Show Metro Lagos Estate collecting for its security generator, followed by an approved payment to Chinedu the mechanic.
+- Autoplay the illustration without preview labels or playback buttons; respect reduced-motion preferences.
+- Remove the three requested privacy passages.
+
+### Removed
+
+- Retire the design gallery and rejected photo variants from the active local previews. Production serves only the selected homepage.
+
 ## 0.1.1 — 2026-10-18
 
 ### Changed
