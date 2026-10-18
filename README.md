@@ -11,7 +11,7 @@ node scripts/setup-env.mjs
 npm run dev
 ```
 
-Open http://localhost:3035. Admin: http://localhost:3035/admin.
+Open http://localhost:3035. Admin: open `http://localhost:3035/<ADMIN_PATH>` using the route printed by the setup script.
 
 Change **`brand.name` in `src/config.ts`** to rename the website, page metadata, email subjects, email body, and sender display name. The repo, storage identifiers, and cookie names are intentionally stable across renames. Contact details and company name live in the same config. Set `SITE_URL` separately when changing domains, and redeploy.
 
@@ -30,6 +30,8 @@ Password plus a one-time email code, restricted on the server to:
 - chinazorfredrick@gmail.com
 - ugochigere02@gmail.com
 - leslieokoduwa@gmail.com
+
+The admin page uses a random 24-digit `admin-…` route, configured with the server-only `ADMIN_PATH` variable. The old `/admin` URL and incorrect paths return 404; there is no redirect revealing the new URL. Keep the actual value out of this public repository. Password and email-code checks still protect access.
 
 The password is scrypt-hashed. Codes expire after 10 minutes, allow five guesses, and are single-use. Sessions expire after eight hours and use HttpOnly, Secure (production), SameSite=Strict cookies. Logout revokes the server session. Auth attempts are rate limited in the shared database. The original deployment password is shared privately, never committed.
 

@@ -17,7 +17,7 @@ export function AdminLogin() {
      const result = await response.json();
      if (!response.ok) throw new Error(result.error);
      if (result.challenge) { setEmail(String(data.get('email'))); setChallenge(result.challenge); }
-     else window.location.assign('/admin');
+     else window.location.reload();
    } catch (e) { setError(e instanceof Error ? e.message : 'Unable to sign in. Please try again.'); }
    finally { setBusy(false); }
  }
