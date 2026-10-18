@@ -1,0 +1,67 @@
+.landing { --ink:#34251f; --muted:#64554a; --line:#d6c5ac; --surface:#fffaf2; --accent:#a93f27; --sage:#f1eadb; min-height:100dvh; color:var(--ink); background:#fbf8f1; }
+.header { display:flex; align-items:center; gap:36px; justify-content:space-between; max-width:1480px; margin:auto; padding:24px 48px; height:100px; }
+.header :global(.brand) { font-size:54px; letter-spacing:-3px; margin-right:auto; }
+.stage { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-areas:'title photo' 'signup photo'; align-items:start; column-gap:72px; max-width:1480px; margin:auto; padding:36px 48px 72px; }
+.titleBlock { grid-area:title; min-width:0; }
+.titleBlock h1 { font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:clamp(64px,7.2vw,108px); line-height:.93; font-weight:800; letter-spacing:-.065em; }
+.titleBlock h1 span { color:var(--accent); }
+.titleBlock>p { max-width:430px; font-size:16px; line-height:1.6; margin-top:24px; color:var(--muted); }
+.artwork { grid-area:photo; position:relative; width:100%; max-width:620px; align-self:start; margin:32px 12px 24px 0; }
+.artwork::before { content:''; position:absolute; inset:8px -4px -8px 8px; background:#eed7c7; border:1px solid #d9ad91; border-radius:16px; transform:rotate(2.5deg); }
+.portrait { position:relative; width:100%; aspect-ratio:1; overflow:hidden; border-radius:16px; background:#e8dfd0; container-type:inline-size; border:6px solid #fffaf2; transform:rotate(-2deg); }
+.portrait img { object-fit:cover; object-position:50% 82%; }
+.photoWordmark { position:absolute; left:6%; bottom:6%; color:#fffce9; font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:clamp(56px,27cqw,190px); font-weight:800; letter-spacing:-.07em; line-height:.82; pointer-events:none; user-select:none; }
+.signup { grid-area:signup; width:100%; max-width:460px; margin-top:28px; padding:0; }
+.signup :global(.waitlist-form), .signup :global(.signup-success) { max-width:none; }
+.signup :global(.field-label) { font-size:14px; }
+.signup :global(.email-field) { background:#fffefb; border:1px solid #b5a38f; border-radius:8px; }
+.signup :global(.email-field input) { min-height:52px; }
+.signup :global(.button) { border-radius:8px; min-height:54px; font-weight:700; background:var(--accent); color:#fffaf2; border-color:var(--accent); box-shadow:none; }
+.signup :global(.button:hover) { background:#8d301e; }
+.signup :global(.optional-fields summary) { font-size:13px; }
+.signup :global(.consent) { font-size:12px; line-height:1.6; min-height:40px; }
+.signup :global(.signup-success) { background:transparent; border:0; padding:0; }
+.signup :global(.signup-success h2) { font-size:30px; }
+.explainer { display:grid; grid-template-columns:1fr 1fr; gap:72px; padding:64px 48px; max-width:1480px; margin:auto; border-top:1px solid var(--line); }
+.explainer h2 { font-family:'Bricolage Grotesque Variable',Arial,sans-serif; font-size:clamp(32px,4vw,60px); font-weight:800; line-height:1.03; letter-spacing:-.05em; }
+.explainer p { font-size:16px; line-height:1.7; max-width:530px; }
+.explainer details { margin-top:20px; border-top:1px solid var(--line); }
+.explainer summary { display:flex; align-items:center; justify-content:space-between; cursor:pointer; min-height:56px; font-size:14px; }
+.explainer details p { padding-bottom:12px; font-size:14px; }
+.footer { max-width:1480px; padding:16px 48px 32px; margin:auto; display:flex; align-items:center; justify-content:space-between; font-size:12px; color:var(--muted); }
+.footer a { display:flex; align-items:center; min-height:44px; gap:8px; }
+.photoDecorations { position:absolute; inset:0; pointer-events:none; }
+.photoDecorations>span { position:absolute; display:grid; place-items:center; border-radius:10px; }
+.peopleStamp { width:62px; height:62px; top:-16px; right:-12px; color:#fff3e4; background:var(--accent); border:4px solid #fbf8f1; transform:rotate(9deg); }
+.recordStamp { width:58px; height:66px; bottom:-22px; left:-18px; color:var(--accent); background:#fff3df; border:1px solid #d9ad91; transform:rotate(-9deg); }
+@media (min-width:901px) and (max-width:1100px) {
+  .header { padding:20px 32px; }
+  .stage { padding:24px 32px 60px; column-gap:40px; }
+  .titleBlock h1 { font-size:clamp(60px,6.5vw,72px); }
+  .explainer { padding:48px 32px; gap:32px; }
+}
+@media (max-width:900px) {
+  .header { padding:16px 24px; height:76px; gap:16px; }
+  .header :global(.brand) { font-size:42px; }
+  .stage { display:flex; flex-direction:column; padding:24px 24px 48px; }
+  .titleBlock h1 { font-size:clamp(42px,14vw,90px); line-height:.94; letter-spacing:-.065em; }
+  .titleBlock>p { font-size:15px; line-height:1.6; max-width:560px; margin-top:20px; }
+  .artwork { width:calc(100% - 8px); max-width:560px; margin:36px 8px 20px 0; }
+  .portrait { border-width:4px; transform:rotate(-1.5deg); }
+  .peopleStamp { width:46px; height:46px; top:-14px; right:-8px; border-width:3px; }
+  .recordStamp { width:42px; height:50px; bottom:-15px; left:-10px; }
+  .photoDecorations svg { width:25px; height:25px; }
+  .artwork::before { border-radius:12px; }
+  .portrait { aspect-ratio:4/3; border-radius:12px; }
+  .portrait img { object-position:50% 74%; }
+  .signup { width:100%; max-width:560px; margin:24px auto 0; }
+  .signup :global(.field-label) { font-size:13px; }
+  .signup :global(.optional-fields summary) { font-size:12px; gap:3px; flex-wrap:wrap; }
+  .signup :global(.optional-fields summary span) { font-size:11px; }
+  .signup :global(.button) { font-size:15px; }
+  .explainer { grid-template-columns:1fr; gap:24px; padding:40px 24px; }
+  .explainer h2 { font-size:40px; }
+  .explainer p { font-size:15px; }
+  .footer { padding:0 24px 24px; }
+}
+@media (prefers-reduced-motion:reduce) { .landing * { scroll-behavior:auto; } }

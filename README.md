@@ -59,4 +59,6 @@ npm run test:integration
 
 The integration suite starts an isolated production server on port 3036 with temporary encrypted storage and empty SMTP credentials. It tests persistence, duplicate signup, failure retries, CSRF, private paths, allowlisted login, code expiry/replay/guess limits, session logout, CSV formula protection, and unsubscribe. It never sends real emails.
 
-Design research and photography credits: [docs/design-research.md](docs/design-research.md).
+Design research and photography credits: [docs/design-research.md](docs/design-research.md) and [docs/modern-experiments.md](docs/modern-experiments.md). The approved homepage uses the Abuja friends photograph, a pale-ivory/rust palette, flat decorations, and a configurable wordmark. Earlier comparisons remain on the experiment branch and are not public production routes.
+
+Release validation and rollback: [docs/release-2026-10-18.md](docs/release-2026-10-18.md).
