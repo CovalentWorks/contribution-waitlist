@@ -1,10 +1,20 @@
-# Separate modern waitlist experiments
+# Separate waitlist experiments
+
+## Current direction: simple photograph, no 3D
+
+The user selected a flat photographic design: keep the five friends in Abuja, remove the circular crop and all 3D objects, and use the rust-brown accent from the original local page instead of blue. The current `/lab/circle` URL is retained so existing preview links continue to work, but the concept is now labelled **Friends**. The photo uses a rectangular crop with small corner rounding and a thin offset rust outline. The headline accent and button use `#a93f27`; the pale-ivory background remains. There are no raised shadows or WebGL canvases.
+
+The shared 3D component, Three.js dependency, and its types were removed. The secondary dark comparison also uses a flat photo. The Abuja photo is retained: the user's clarification referred to the reddish-brown colour, not replacing it with the family photo from port 3035.
+
+Browser screenshots were checked at mobile and desktop widths with zero canvases, no horizontal overflow, and no page errors. The production build passes. No deployment was made; the existing port 3035 app is untouched.
+
+The research and earlier review below document the history of this experiment; the current direction above supersedes their dimensional-art recommendations.
 
 These concepts are isolated on branch `design/modern-experiments` in the `padi-design-lab` worktree. They are not deployed and do not replace the existing local app on port 3035. Run `npx next dev --port 3038` here, then open:
 
 - http://localhost:3038/ — comparison index
-- http://localhost:3038/lab/circle — pale-ivory background with a blue shared ring
-- http://localhost:3038/lab/assembly — dark/lilac assembled blocks
+- http://localhost:3038/lab/circle — latest pale-ivory and rust photographic design
+- http://localhost:3038/lab/assembly — dark/lilac photographic comparison
 
 The local environment has its own database and secrets, with no SMTP credentials. Preview submissions must not be mistaken for live signups. Keep this environment isolated; do not copy the production environment into the lab.
 
@@ -21,7 +31,7 @@ The user's references changed the brief from a warm editorial photograph to a mo
 
 [Block's current homepage](https://block.xyz/) was also inspected. It showed a minimal white mission page, not a 3D hero. No exact Block Mobbin listing was found; it is not claimed as a current 3D reference.
 
-Reference artwork and logos were not reused. Both sculptures are original Three.js geometry. Four sections completing one circle suggest contributions coming together. Assembly explores individual rounded pieces forming a whole, with a photographic front face.
+Reference artwork and logos were not reused. The earlier sculptures used original Three.js geometry; that implementation has now been removed at the user's request.
 
 ## Photographs and rights
 
@@ -31,11 +41,11 @@ Reference artwork and logos were not reused. Both sculptures are original Three.
 
 The photographs were downloaded under the [Pexels licence](https://www.pexels.com/license/), which permits free commercial use and modification. The subjects are not represented as actual customers or endorsers. Nigerian context comes from source metadata, not assumptions based on appearance. Images are real photographs; no synthetic people were generated.
 
-## Lighter Circle revision
+## Earlier lighter Circle revision
 
 After choosing Circle, the user requested a lighter background like the warm local version. Circle now uses pale ivory `#fbf8f1`, warm-white form surfaces, soft neutral borders/shadows, and a muted butter-yellow button. The blue sculpture, navy/blue heading, layout, copy, and type remain. These overrides are scoped to Circle; Assembly and the original app on port 3035 are unchanged. This revision is still local, with no deployment.
 
-## Review outcome
+## Earlier 3D review outcome
 
 All three reviewers — visual design, mobile UX, and waitlist design — preferred **Circle**. The photo and ring form a clearer composition than Assembly's photographic panel and blocks. Assembly remains a comparison, not an equally resolved recommendation.
 
@@ -44,11 +54,10 @@ Review refinements: enlarged Circle's photo aperture, made the desktop sculpture
 ## Implementation and checks
 
 - The name and contact details still come from `src/config.ts`.
-- Three.js is dynamically imported. A CSS fallback and real image remain when WebGL cannot initialize.
-- Pointer tilt is restrained, ignores touch, and respects reduced motion. Rendering stops when settled or offscreen. Resources/listeners are disposed on unmount.
+- No 3D library, canvas, pointer animation, or WebGL dependency remains.
 - The existing signup component and backend are reused. No authentication, storage, email, or deployment behavior was changed.
 - Browser review covers 320, 390, 430, 768, 1024 and 1440px widths. Tablet layout was corrected after visual inspection, not just an overflow check.
-- Mocked browser requests check optional fields, error recovery, and successful submission without adding signups or sending mail. Reduced-motion rendering and unavailable-WebGL fallbacks are checked separately.
+- Prior mocked browser requests checked optional fields, error recovery, and successful submission without adding signups or sending mail. The form and backend behavior remain unchanged in the flat-photo revision.
 - Run `npm run build` for production compilation. The experiments remain local and are marked noindex.
 
 Before promoting any concept, carry only the chosen UI into the production branch, reconcile its privacy/email/share styling, and repeat the existing production release checks. Do not deploy the comparison gallery as the waitlist homepage.

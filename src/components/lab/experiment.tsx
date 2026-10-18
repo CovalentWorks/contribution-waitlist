@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { ArrowUpRight, ArrowRight, Plus } from '@phosphor-icons/react/dist/ssr';
 import { Brand } from '@/components/brand';
 import { WaitlistForm } from '@/components/waitlist-form';
-import { GroupSculpture } from './group-sculpture';
 import { brand } from '@/config';
 import styles from './lab.module.css';
 
@@ -19,9 +18,7 @@ export function Experiment({ variant }: { variant: 'circle' | 'assembly' }) {
           <p>{brand.name} will give your group one link to collect money, a shared record of payments, and people you choose to approve withdrawals.</p>
         </div>
         <div className={styles.artwork}>
-          {circle && <div className={styles.portrait}><Image src="/images/abuja-friends.webp" alt="Five friends sitting together outdoors in Abuja, Nigeria" fill preload sizes="(max-width:599px) 164px, (max-width:900px) 220px, (max-width:1100px) 354px, 500px" /></div>}
-          <GroupSculpture variant={variant} />
-          {!circle && <div className={styles.photoTile}><Image src="/images/nigerian-wedding.webp" alt="Friends and family celebrating at a Nigerian wedding" fill preload sizes="(max-width:760px) 210px, 360px" /></div>}
+          <div className={styles.portrait}><Image src={circle ? '/images/abuja-friends.webp' : '/images/nigerian-wedding.webp'} alt={circle ? 'Five friends sitting together outdoors in Abuja, Nigeria' : 'Friends and family celebrating at a Nigerian wedding'} fill preload sizes="(max-width:600px) calc(100vw - 48px), (max-width:900px) 560px, 45vw" /></div>
         </div>
         <div className={styles.signup}><WaitlistForm /></div>
       </section>
