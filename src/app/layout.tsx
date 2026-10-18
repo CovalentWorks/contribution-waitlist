@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import '@fontsource-variable/manrope';
+import '@fontsource-variable/libre-franklin';
 import './globals.css';
 import { brand } from '@/config';
 export const metadata: Metadata = {

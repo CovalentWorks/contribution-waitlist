@@ -14,4 +14,4 @@ The copy explains the actual proposed controls: collection links, visible contri
 
 [Cheerful Black friends hugging on a sandy beach](https://www.pexels.com/photo/cheerful-black-friends-hugging-on-sandy-beach-5161734/) by **SALOMON BYUMA**, Pexels. Used under the [Pexels license](https://www.pexels.com/license/). Stored locally as `public/images/community.webp` and `community-email.jpg`, resized/compressed for web and email. These are stock-photo subjects, not claimed customers or team members. The user's brief specifically requested Black or African people.
 
-Manrope is self-hosted through `@fontsource-variable/manrope`; icons are from Phosphor. No third-party font requests or analytics are required by the page.
+Libre Franklin is self-hosted through `@fontsource-variable/libre-franklin`; icons are from Phosphor. No third-party font requests or analytics are required by the page.

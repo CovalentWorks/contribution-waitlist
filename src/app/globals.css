@@ -2,7 +2,7 @@
 :root{--paper:#f8f8f2;--surface:#fffef9;--ink:#183f32;--muted:#566557;--line:#d7ded2;--yellow:#f3e5a2;--sage:#edf1e5;--error:#a13826;--radius:12px;color-scheme:light}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:'Manrope Variable',Arial,sans-serif;font-size:15px;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Libre Franklin Variable',Arial,sans-serif;font-size:15px;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button,input,select,textarea{font:inherit}
 button,a,input,textarea,select,summary{-webkit-tap-highlight-color:transparent}
@@ -14,7 +14,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid #688447;outline-offset
 h1,h2,h3,p{margin:0}
 svg{flex-shrink:0}
 ::selection{background:#e7d77c;color:#183f32}
-.brand{display:inline-flex;font-size:43px;font-weight:850;letter-spacing:-3px;line-height:1}
+.brand{display:inline-flex;font-size:43px;font-weight:850;letter-spacing:-1.8px;line-height:1}
 .brand-dot{color:inherit}
 .skip-link{position:fixed;top:-100px;left:16px;z-index:99;background:var(--ink);color:var(--paper);padding:14px}
 .skip-link:focus{top:10px}
@@ -25,11 +25,11 @@ svg{flex-shrink:0}
 .waitlist-layout{display:grid;grid-template-columns:1fr 1.03fr;min-height:620px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .signup-panel{padding:56px 48px 24px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
 .coming-soon{font-size:12px;font-weight:550;margin-bottom:33px}
-h1{font-size:clamp(46px,4.25vw,68px);font-weight:550;letter-spacing:-3.8px;line-height:1.04}
+h1{font-size:clamp(46px,4.05vw,65px);font-weight:500;letter-spacing:-1.9px;line-height:1.12}
 .hero-description{font-size:15px;line-height:1.85;max-width:370px;margin:25px 0 38px;color:var(--muted)}
 .photo-panel{position:relative;min-height:620px;overflow:hidden;background:#b9bbaf}
 .photo-panel img{object-fit:cover;object-position:center 24%}
-.photo-wordmark{position:absolute;bottom:17px;left:28px;font-size:clamp(110px,16vw,265px);letter-spacing:-.085em;font-weight:850;line-height:.9;color:#fffdf0;pointer-events:none}
+.photo-wordmark{position:absolute;bottom:17px;left:28px;font-size:clamp(110px,16vw,265px);letter-spacing:-.065em;font-weight:850;line-height:.9;color:#fffdf0;pointer-events:none}
 .waitlist-form{width:100%;max-width:440px;scroll-margin-top:35px}
 .field-label{display:block;font-size:12px;font-weight:650;margin-bottom:12px}
 .email-input-row{display:flex;gap:7px}
@@ -78,7 +78,7 @@ h2{font-weight:600;font-size:32px;letter-spacing:-1px;line-height:1.2}
 .document-page .small-label{display:block;margin-bottom:15px}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(min-width:1500px){.waitlist-layout{min-height:740px}.signup-panel{padding:80px}.hero-description{font-size:17px;max-width:400px}.photo-panel{min-height:740px}}
-@media(max-width:1100px){.landing{padding:0 18px}.site-header{height:90px;padding:0 16px}.signup-panel{padding:48px 30px 22px}.signup-panel h1{font-size:49px;letter-spacing:-2.7px}.email-input-row{flex-wrap:wrap}.email-field{flex-basis:100%}.email-input-row .button{width:100%}.coming-soon{margin-bottom:28px}.hero-description{font-size:14px;margin:25px 0 30px}.photo-wordmark{left:20px}.about-product{margin-top:30px}}
-@media(max-width:760px){.landing{padding:0 14px}.site-header{height:82px;padding:0 10px}.brand{font-size:39px}.site-header>a:not(.brand){font-size:12px}.waitlist-layout{grid-template-columns:1fr;min-height:0}.signup-panel{padding:35px 24px 6px}.signup-panel h1{font-size:clamp(43px,9.5vw,64px);letter-spacing:-2.7px}.coming-soon{font-size:11px;margin-bottom:25px}.hero-description{font-size:14px;max-width:370px;margin:24px 0 31px}.waitlist-form,.about-product{max-width:none}.photo-panel{min-height:0;height:400px}.photo-panel img{object-position:center 23%}.photo-wordmark{font-size:140px;left:21px;bottom:17px}.email-input-row{flex-wrap:nowrap}.email-field{flex-basis:auto}.email-input-row .button{width:auto;font-size:11px;padding:15px 13px;gap:8px}.email-field{padding-left:10px}.email-field>svg{display:none}.field-label{font-size:12px}.about-product{margin-top:28px}.about-product summary{padding:20px 0}.site-footer{padding:21px 8px 26px;font-size:10px}.consent{font-size:10px}}
-@media(max-width:390px){.signup-panel{padding-inline:20px}.signup-panel h1{font-size:40px;letter-spacing:-2px}.email-input-row{flex-wrap:wrap}.email-field{flex-basis:100%}.email-input-row .button{width:100%}.photo-panel{height:350px}}
+@media(max-width:1100px){.landing{padding:0 18px}.site-header{height:90px;padding:0 16px}.signup-panel{padding:48px 30px 22px}.signup-panel h1{font-size:46px;letter-spacing:-1.5px}.email-input-row{flex-wrap:wrap}.email-field{flex-basis:100%}.email-input-row .button{width:100%}.coming-soon{margin-bottom:28px}.hero-description{font-size:14px;margin:25px 0 30px}.photo-wordmark{left:20px}.about-product{margin-top:30px}}
+@media(max-width:760px){.landing{padding:0 14px}.site-header{height:82px;padding:0 10px}.brand{font-size:39px}.site-header>a:not(.brand){font-size:12px}.waitlist-layout{grid-template-columns:1fr;min-height:0}.signup-panel{padding:35px 24px 6px}.signup-panel h1{font-size:clamp(39px,8.8vw,60px);letter-spacing:-1.4px}.coming-soon{font-size:11px;margin-bottom:25px}.hero-description{font-size:14px;max-width:370px;margin:24px 0 31px}.waitlist-form,.about-product{max-width:none}.photo-panel{min-height:0;height:400px}.photo-panel img{object-position:center 23%}.photo-wordmark{font-size:140px;left:21px;bottom:17px}.email-input-row{flex-wrap:nowrap}.email-field{flex-basis:auto}.email-input-row .button{width:auto;font-size:11px;padding:15px 13px;gap:8px}.email-field{padding-left:10px}.email-field>svg{display:none}.field-label{font-size:12px}.about-product{margin-top:28px}.about-product summary{padding:20px 0}.site-footer{padding:21px 8px 26px;font-size:10px}.consent{font-size:10px}}
+@media(max-width:390px){.signup-panel{padding-inline:20px}.signup-panel h1{font-size:36px;letter-spacing:-1.2px}.email-input-row{flex-wrap:wrap}.email-field{flex-basis:100%}.email-input-row .button{width:100%}.photo-panel{height:350px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
