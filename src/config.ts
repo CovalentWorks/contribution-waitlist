@@ -6,7 +6,7 @@ export const brand = {
   company: 'CovalentWorks',
   currency: 'NGN',
   locale: 'en-NG',
-  colors: { forest: '#183f32', paper: '#fafbf6', yellow: '#f3e5a2' },
+  colors: { ink: '#34251f', paper: '#fbf6ec', accent: '#a93f27', muted: '#64554a', line: '#d6c5ac' },
 } as const;
 
 export const interests = [
