@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Rename the product to Ourmoni across the website, animated ledger, admin pages, privacy notice, email copy and sender display name, and social metadata.
+- Update product references in the project documentation. Existing deployment addresses, worktree paths, database format and session identifiers remain compatible with the current installation.
+
 ## 0.1.2 — 2026-10-18
 
 ### Changed

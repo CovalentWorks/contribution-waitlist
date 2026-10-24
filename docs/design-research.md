@@ -22,20 +22,20 @@ Bricolage Grotesque ExtraBold for display text and Archivo for body text are sel
 
 Reviewed Mobbin's archived Luffu hero and Pally waitlist again, plus the live phone layouts of [Luffu](https://luffu.com/), [Partiful](https://partiful.com/), and [Pally](https://pally.com/). The live Luffu and Pally pages have evolved beyond their archived waitlists. Luffu uses photography behind its opening message; Partiful places its social image beneath a short headline and actions while still showing it in the first phone viewport. Pally uses a focused text-led opening.
 
-For Padi, the previous phone layout placed a long paragraph and the complete form before the photo, making the strongest visual feel detached. The revised phone hero combines the photo and headline in one opening composition. Faces stay in the upper portion and a dark lower scrim keeps the headline legible; the description and form follow immediately. Desktop retains the side-by-side composition. The image and headline are not duplicated in the DOM.
+For Ourmoni, the previous phone layout placed a long paragraph and the complete form before the photo, making the strongest visual feel detached. The revised phone hero combines the photo and headline in one opening composition. Faces stay in the upper portion and a dark lower scrim keeps the headline legible; the description and form follow immediately. Desktop retains the side-by-side composition. The image and headline are not duplicated in the DOM.
 
 ## Independent Mobbin review and redesign (18 October 2026)
 
-Three design reviewers independently inspected references in authenticated Mobbin, captured and viewed screenshots, then compared three rendered Padi candidates at 390px and 1440px: cobalt/butter with a panoramic photo below signup, a saturated rust page with an arched photograph, and a warm cream page with a full-width headline above a landscape photograph and signup.
+Three design reviewers independently inspected references in authenticated Mobbin, captured and viewed screenshots, then compared three rendered Ourmoni candidates at 390px and 1440px: cobalt/butter with a panoramic photo below signup, a saturated rust page with an arched photograph, and a warm cream page with a full-width headline above a landscape photograph and signup.
 
 New references inspected:
 
-- [Partiful hero](https://mobbin.com/sites/sections/5472e9d8-de81-40dc-ba9e-a2d6f4e71fe1): concise copy and action sit apart from expressive social imagery. Padi borrows that separation without party decoration or text over faces.
+- [Partiful hero](https://mobbin.com/sites/sections/5472e9d8-de81-40dc-ba9e-a2d6f4e71fe1): concise copy and action sit apart from expressive social imagery. Ourmoni borrows that separation without party decoration or text over faces.
 - [Unify hero](https://mobbin.com/sites/sections/acd5dcfc-c4b8-48af-bbe0-69d41446e1b7): uninterrupted headline above a photographic field. This informed the winning desktop composition.
 - [Eat Hungry Tiger hero](https://mobbin.com/sites/sections/f6d74eb3-c4bb-4302-bff9-41aa18c34f68): confident warm colours and large typography. This informed the rust contender and the winner's restrained accent.
 - [Daylight hero](https://mobbin.com/sites/sections/ae02560e-359b-462e-ac3d-887c2444d273): warm colour and environmental photography. Its opening interstitial was rejected because it delays the waitlist action.
 - [Goldsand CTA](https://mobbin.com/sites/sections/3630fa58-de35-4bed-9a13-e2e20f69461d): one dominant object and a quiet action area. Its product imagery and claims were not transferred.
-- [Fixa CTA](https://mobbin.com/sites/sections/d84f593d-7b77-4382-8b3f-423645a3cfa9): photography with deliberate negative space. Its moody blur was unsuitable for Padi.
+- [Fixa CTA](https://mobbin.com/sites/sections/d84f593d-7b77-4382-8b3f-423645a3cfa9): photography with deliberate negative space. Its moody blur was unsuitable for Ourmoni.
 
 The reviewers ranked the rendered candidates independently. Visual direction: Rust, Warm, Cobalt. Mobile UX: Warm, Cobalt, Rust. Waitlist design: Warm, Rust, Cobalt. Warm won two of three first-place votes. All three approved the final refined Warm implementation. This is a qualitative design review, not a conversion experiment.
 
@@ -45,7 +45,7 @@ Cream `#FBF6EC`, brown `#34251F`, rust `#A93F27`, Bricolage Grotesque 800 displa
 
 ### New free photograph
 
-[Family setting the table for dinner](https://www.pexels.com/photo/family-setting-the-table-for-dinner-4262011/) by August de Richelieu, downloaded from Pexels and served locally as optimized WebP and email JPEG. The [Pexels licence](https://www.pexels.com/license/) permits free commercial use and modification without mandatory attribution. The people are illustrative subjects, not claimed Padi users. A landscape crop preserves the intergenerational gathering and shared table. The previous beach image remains in repository history; it is no longer the current page or email visual.
+[Family setting the table for dinner](https://www.pexels.com/photo/family-setting-the-table-for-dinner-4262011/) by August de Richelieu, downloaded from Pexels and served locally as optimized WebP and email JPEG. The [Pexels licence](https://www.pexels.com/license/) permits free commercial use and modification without mandatory attribution. The people are illustrative subjects, not claimed Ourmoni users. A landscape crop preserves the intergenerational gathering and shared table. The previous beach image remains in repository history; it is no longer the current page or email visual.
 
 ### Validation
 

@@ -1,6 +1,6 @@
 /** Change name here, then deploy: page, metadata, admin, email and share copy follow. */
 export const brand = {
-  name: 'Padi',
+  name: 'Ourmoni',
   description: 'Collect together. See every contribution. Make decisions as a group.',
   contactEmail: 'hello@usecollet.com',
   company: 'CovalentWorks',

@@ -1,6 +1,6 @@
-# Contribution waitlist
+# Ourmoni waitlist
 
-A standalone Next.js waitlist for CovalentWorks' group contributions product. The working name is **Padi**. This project collects waitlist signups; it does not collect money or identity documents.
+A standalone Next.js waitlist for **Ourmoni**, CovalentWorks' group contributions product. This project collects waitlist signups; it does not collect money or identity documents.
 
 ## Local development
 
